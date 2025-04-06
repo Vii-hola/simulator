@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的网站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>欢迎来到我的网站</h1>
+    </header>
+
+    <main>
+        <section id="content">
+            <h2>主页</h2>
+            <p>这是一个简单的主页示例。你可以在这里添加更多的内容和功能。</p>
+            <input type="number" id="number-input" placeholder="请输入数字" style="display:none;">
+        </section>
+    </main>
+
+    <footer>
+        <p>版权所有 © 2025</p>
+    </footer>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>您的包裹编号：HK988567845 配送失败通知：由于配送地址不清楚，您的包裹未能配送，请更新您的地址</p>
+            <button onclick="closePopup()">继续</button>
+        </div>
+    </div>
+
+    <script>
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('number-input').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
